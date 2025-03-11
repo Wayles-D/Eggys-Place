@@ -5,7 +5,7 @@ import Modal from "../Uimodal/AuthModal"; // Importing the modal component
 // Import images
 import EggysImg from "../assets/EggysPlaceImg.svg";
 import LocationImg from "../assets/LocationImg.svg";
-import DropDownImg from "../assets/DropdownImg.svg";
+import DropDownImg from "../assets/DropDownImg.svg";
 import CartImg from "../assets/CartImg.svg";
 import LoginImg from "../assets/LoginImg.svg";
 
