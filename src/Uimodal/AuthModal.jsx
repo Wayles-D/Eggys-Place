@@ -5,7 +5,7 @@ import SignIn from "../Auth/SignIn";
 const AuthModal = ({ isOpen, onClose }) => {
   const [isSignUp, setIsSignUp] = useState(false);
 
-  // Function to switch between Sign Up and Sign In
+  
   const toggleAuth = () => {
     setIsSignUp((prev) => !prev);
   };

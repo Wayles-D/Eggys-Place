@@ -1,5 +1,9 @@
 import Xlogo from '../assets/Xlogo.svg'
 import JazzysLogo from '../assets/Jazzys Logo.svg'
+import FacebookImg from '../assets/FacebookImg.svg'
+import TwitterImg from '../assets/TwitterImg.svg'
+import YoutubeImg from '../assets/YoutubeImg.svg'
+import InstagramImg from '../assets/InstagramImg.svg'
 
 const Footer = () => {
   return (
@@ -20,11 +24,11 @@ const Footer = () => {
 
         {/* Right Side - Social Icons */}
         <div className="flex items-center gap-3">
-          <a href="#"><img src="icon1.png" alt="" className="w-4" /></a>
-          <a href="#"><img src="icon2.png" alt="" className="w-4" /></a>
-          <a href="X.com"><img src={Xlogo} alt="X" className="w-4" /></a>
-          <a href="#"><img src="icon4.png" alt="" className="w-4" /></a>
-          <a href="#"><img src="icon5.png" alt="" className="w-4" /></a>
+          <a href="https://x.com"><img src={Xlogo} alt="X-Icon" className="w-4" /></a>
+          <a href="https://www.facebook.com"><img src={FacebookImg} alt="Facebook-icon" className="w-4" /></a>
+          <a href="https://x.com"><img src={TwitterImg} alt="Twitter-Icon" className="w-4" /></a>
+          <a href="https://www.instagram.com"><img src={InstagramImg} alt="Instagram-Icon" className="w-4" /></a>
+          <a href="https://www.youtube.com"><img src={YoutubeImg} alt="Youtube-Icon" className="w-4" /></a>
         </div>
       </div>
 

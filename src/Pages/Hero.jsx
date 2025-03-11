@@ -2,35 +2,31 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <main>
+    <main className="flex justify-center overflow-hidden">
       <div
-        className="hero min-h-screen"
+        className="hero min-h-screen w-full flex items-center justify-center text-center px-4 sm:px-6 md:px-10"
         style={{
           backgroundImage:
             "url(https://res.cloudinary.com/dmb5ggmvg/image/upload/v1741656426/Frame_1171276711_tmhdwm.png)",
-          backgroundSize: "cover",        // Make sure the image covers the whole area
-          backgroundRepeat: "no-repeat",  // Prevent repeating patterns
-          backgroundPosition: "center",   // Center the image properly
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
         }}
       >
-        <div className="hero-overlay">
-          <div className="hero-content text-neutral-content text-center">
-            <div className="mt-35">
-              <h1 className="font-[Red-Hat-Text] text-[56px] tracking-widest">
-                The <span className="Zing text-[#B67B0F]">ZING</span> in every bite
-              </h1>
-              <p className="Savor font-[Red-Hat-Text] font-[500] mt-8 w-[844px] text-[28px] tracking-[11%] leading-9">
-                Savor the flavor! Explore our delicious menu and order now for a taste sensation!
-              </p>
-              <div className="mt-18">
-                <button className="rounded-[31px] h-15 w-45 mr-13 bg-[#B67B0F]">
-                  Order Now!
-                </button>
-                <button className="rounded-[32px] h-15 w-30 mr-16 bg-white text-black">
-                  View Menu
-                </button>
-              </div>
-            </div>
+        <div className="max-w-[90vw] sm:max-w-[85vw] md:max-w-[70vw] lg:max-w-[60vw]">
+          <h1 className="font-[Red-Hat-Text] text-[24px] sm:text-[28px] md:text-[40px] lg:text-[56px] tracking-widest break-words whitespace-normal text-wrap balance text-white">
+            The <span className="Zing text-[#B67B0F]">ZING</span> in every bite
+          </h1>
+          <p className="Savor font-[Red-Hat-Text] font-medium mt-6 text-[16px] sm:text-[18px] md:text-[24px] tracking-wider leading-7 max-w-full break-words whitespace-normal text-wrap balance text-white">
+            Savor the flavor! Explore our delicious menu and order now for a taste sensation!
+          </p>
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
+            <button className="rounded-[31px] h-[50px] w-[160px] sm:h-[60px] sm:w-[180px] bg-[#B67B0F] text-white font-bold">
+              Order Now!
+            </button>
+            <button className="rounded-[32px] h-[50px] w-[160px] sm:h-[60px] sm:w-[180px] bg-white text-black font-bold">
+              View Menu
+            </button>
           </div>
         </div>
       </div>

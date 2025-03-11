@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Modal from "../Uimodal/AuthModal"; // Importing the modal component
+import Modal from "../Uimodal/AuthModal"; 
 
-// Import images
+
 import EggysImg from "../assets/EggysPlaceImg.svg";
 import LocationImg from "../assets/LocationImg.svg";
 import DropDownImg from "../assets/DropDownImg.svg";
@@ -11,13 +11,13 @@ import LoginImg from "../assets/LoginImg.svg";
 
 const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isLogin, setIsLogin] = useState(true); // Toggle between login/signup
+  const [isLogin, setIsLogin] = useState(true); 
 
   return (
     <>
       <header className="bg-[#100101]">
         <nav className="container mx-auto px-[10px] md:px-[50px] lg:px-[100px] py-[8px] flex justify-between items-center">
-          {/* Left Section */}
+          
           <div className="flex items-center gap-2 md:gap-4">
             <img src={EggysImg} alt="Eggy's Logo" className="w-[50px] h-auto" />
             <div className="flex items-center gap-1 md:gap-2">
@@ -47,7 +47,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Search Bar */}
+          
           <div className="hidden lg:block w-[280px]">
             <form>
               <input
@@ -58,20 +58,20 @@ const Navbar = () => {
             </form>
           </div>
 
-          {/* Right Section */}
+          
           <div className="flex items-center gap-2 md:gap-4">
             <h2 className="font-[500] text-[14px] md:text-[16px] text-[#FBFBFB] hidden lg:block">
               All Products
             </h2>
             <ul className="flex items-center gap-2">
-              {/* Cart Button */}
+              
               <li className="flex items-center h-[40px] px-[15px] bg-[#B67B0F] rounded-[20px]">
                 <img src={CartImg} alt="Cart" className="w-[18px] h-auto" />
                 <Link className="px-2 text-[#FBFBFB] font-[500] text-[14px]">
                   <span className="hidden md:inline-block">Cart</span> 0
                 </Link>
               </li>
-              {/* Login Button */}
+              
               <li
                 className="flex items-center h-[40px] px-[15px] bg-[#F0F0F0] rounded-[20px] cursor-pointer"
                 onClick={() => setIsModalOpen(true)}
