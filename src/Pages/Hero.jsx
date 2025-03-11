@@ -7,7 +7,7 @@ const Hero = () => {
         className="hero min-h-screen"
         style={{
           backgroundImage:
-            "url(https://res.cloudinary.com/dmb5ggmvg/image/upload/v1741087129/Frame_1171276711_tmhdwm.svg)",
+            "url(https://res.cloudinary.com/dmb5ggmvg/image/upload/v1741656426/Frame_1171276711_tmhdwm.png)",
           backgroundSize: "cover",        // Make sure the image covers the whole area
           backgroundRepeat: "no-repeat",  // Prevent repeating patterns
           backgroundPosition: "center",   // Center the image properly
