@@ -13,11 +13,11 @@ const Hero = () => {
         <div className="hero-overlay">
         <div className="hero-content text-neutral-content text-center">
           <div className="mt-35">
-            <h1 className="font-[Red-Hat-Text] text-[56px] tracking-widest Heading w-full sm:w-auto">
+            <h1 className="font-[Red-Hat-Text] text-[56px] tracking-widest">
               The <span className="Zing text-[#B67B0F]">ZING</span> in every
               bite
             </h1>
-            <p className="Savor font-[Red-Hat-Text] font-[500] mt-8 w-[844px] text-[28px] tracking-[11%] leading-9 whitespace-pre-line sm:whitespace-normal sm:break-words">
+            <p className="Savor font-[Red-Hat-Text] font-[500] mt-8 w-[844px] text-[28px] tracking-[11%] leading-9">
               Savor the flavor! Explore our delicious menu and order now for a taste sensation!
             </p>
             <div className="mt-18">
