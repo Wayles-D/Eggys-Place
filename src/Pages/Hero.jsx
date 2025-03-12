@@ -13,7 +13,7 @@ const Hero = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="max-w-[90vw] sm:max-w-[85vw] md:max-w-[70vw] lg:max-w-[60vw]">
+        <div className="max-w-[90vw] sm:max-w-[85vw] md:max-w-[70vw] lg:max-w-[60vw] animate__animated animate__backInUp">
           <h1 className="font-[Red-Hat-Text] text-[24px] sm:text-[28px] md:text-[40px] lg:text-[56px] tracking-widest break-words whitespace-normal text-wrap balance text-white">
             The <span className="Zing text-[#B67B0F]">ZING</span> in every bite
           </h1>

@@ -37,7 +37,7 @@ const Footer = () => {
 
       {/* Bottom Text */}
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-xs px-4 mt-2">
-        <p>TM & Copyright 2025 Jazzy Corporation. All Rights Reserved.</p>
+        <p>TM & Copyright 2025 Eggys Corporation. All Rights Reserved.</p>
         <a href="#" className="hover:underline">Privacy Policy</a>
       </div>
     </footer>

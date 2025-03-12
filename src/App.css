@@ -6,24 +6,6 @@
 @import 'animate.css';
 
 
-.Zing{
-    font-family: "Rammetto One";
-    font-weight: 400;
-    /* line-height: 100%;
-    font-style: normal; */
-  }
-.Heading{
-    font-family: "Red-Hat-Text";
-    font-weight: 500;
-    line-height: 100%;
-    font-style: normal;
-  }
-  
-  .Savor{
-    font-family: "Red-Hat-Text";
-  }
-  
-  
-.Burger-Price{
-  font-family: "serif";
-    }  
+body{
+    background-color:#2e2e2e
+}

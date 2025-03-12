@@ -2,16 +2,18 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Modal from "../Uimodal/AuthModal"; 
 
-
 import EggysImg from "../assets/EggysPlaceImg.svg";
 import LocationImg from "../assets/LocationImg.svg";
 import DropDownImg from "../assets/DropDownImg.svg";
 import CartImg from "../assets/CartImg.svg";
 import LoginImg from "../assets/LoginImg.svg";
 
-const Navbar = () => {
+const Navbar = ({ cart }) => { // ✅ Accept cart as a prop
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isLogin, setIsLogin] = useState(true); 
+  const [isLogin, setIsLogin] = useState(true);
+
+  // ✅ Calculate total number of items in the cart
+  const totalCartItems = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (
     <>
@@ -33,21 +35,14 @@ const Navbar = () => {
                   tabIndex={0}
                   className="dropdown-content menu bg-base-100 rounded-box z-10 w-40 p-2 shadow-sm"
                 >
-                  <li>
-                    <a>Lagos</a>
-                  </li>
-                  <li>
-                    <a>Abuja</a>
-                  </li>
-                  <li>
-                    <a>Benin</a>
-                  </li>
+                  <li><a>Lagos</a></li>
+                  <li><a>Abuja</a></li>
+                  <li><a>Benin</a></li>
                 </ul>
               </div>
             </div>
           </div>
 
-          
           <div className="hidden lg:block w-[280px]">
             <form>
               <input
@@ -58,20 +53,20 @@ const Navbar = () => {
             </form>
           </div>
 
-          
           <div className="flex items-center gap-2 md:gap-4">
             <h2 className="font-[500] text-[14px] md:text-[16px] text-[#FBFBFB] hidden lg:block">
               All Products
             </h2>
             <ul className="flex items-center gap-2">
               
+              {/* ✅ Cart Button with Dynamic Count */}
               <li className="flex items-center h-[40px] px-[15px] bg-[#B67B0F] rounded-[20px]">
                 <img src={CartImg} alt="Cart" className="w-[18px] h-auto" />
                 <Link className="px-2 text-[#FBFBFB] font-[500] text-[14px]">
-                  <span className="hidden md:inline-block">Cart</span> 0
+                  <span className="hidden md:inline-block">Cart</span> {totalCartItems}
                 </Link>
               </li>
-              
+
               <li
                 className="flex items-center h-[40px] px-[15px] bg-[#F0F0F0] rounded-[20px] cursor-pointer"
                 onClick={() => setIsModalOpen(true)}

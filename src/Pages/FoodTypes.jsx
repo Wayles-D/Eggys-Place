@@ -4,7 +4,7 @@ const FoodTypes = () => {
   return (
     <p className=''>
       <main className='bg-[#2e2e2e]'>
-    <div className="carousel carousel-center rounded-[101px] bg-[#252422] overflow-x-auto md:overflow-visible max-w-[90%] md:max-w-[85%] mx-auto px-[10px] md:px-[50px] lg:px-[100px] py-[8px] flex justify-between items-center hover:underline">
+    <div className="carousel carousel-center rounded-[101px] bg-[#252422] overflow-x-auto md:overflow-visible max-w-[90%] md:max-w-[85%] mx-auto px-[10px] md:px-[50px] lg:px-[100px] py-[8px] flex justify-between items-center hover:underline mt-2">
 
 
           <div className="carousel-item flex flex-col items-center">
