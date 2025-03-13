@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Layout/Navbar";
 import { Home } from "./Routes/Routes";
 import { Suspense, useState, useEffect } from "react";
+import ProductDetail from "./Pages/ProductDetail";
 import Footer from "./Layout/Footer";
 import LoadingRing from "./Utils/Loader";
 
@@ -41,6 +42,7 @@ function App() {
         <Routes>
           {/* ✅ Pass handleAddToCart to Home */}
           <Route path="/" element={<Home cart={cart} handleAddToCart={handleAddToCart} />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
         
         <Footer />

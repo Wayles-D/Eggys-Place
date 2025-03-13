@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Hero from "./Hero";
 import FoodTypes from "./FoodTypes";
-import Products from "./Products";
+// import Products from "./Products";
 
 
 const Home = ({ cart, handleAddToCart }) => {  
@@ -10,9 +10,9 @@ const Home = ({ cart, handleAddToCart }) => {
   return (
     <>
       <Hero />
-      <FoodTypes setActiveCategory={setActiveCategory} />
+      <FoodTypes setActiveCategory={setActiveCategory} handleAddToCart={handleAddToCart} />
       {/* ✅ Pass handleAddToCart to Products */}
-      <Products activeCategory={activeCategory} handleAddToCart={handleAddToCart} />
+      {/* <Products activeCategory={activeCategory} handleAddToCart={handleAddToCart} /> */}
     </>
   );
 };

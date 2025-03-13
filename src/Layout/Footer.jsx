@@ -1,5 +1,5 @@
 import Xlogo from '../assets/Xlogo.svg'
-import JazzysLogo from '../assets/Jazzys Logo.svg'
+import EggysLogo from '../assets/EggysPlaceImg.svg'
 import FacebookImg from '../assets/FacebookImg.svg'
 import TwitterImg from '../assets/TwitterImg.svg'
 import YoutubeImg from '../assets/YoutubeImg.svg'
@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
         {/* Left Side - Logo */}
         <div>
-          <img src={JazzysLogo} alt="Logo" className="w-16" />
+          <img src={EggysLogo} alt="Logo" className="w-16" />
         </div>
 
         {/* Center - Links */}

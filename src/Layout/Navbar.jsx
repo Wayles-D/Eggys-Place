@@ -8,6 +8,7 @@ import DropDownImg from "../assets/DropDownImg.svg";
 import CartImg from "../assets/CartImg.svg";
 import LoginImg from "../assets/LoginImg.svg";
 
+
 const Navbar = ({ cart }) => { // ✅ Accept cart as a prop
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
@@ -21,7 +22,9 @@ const Navbar = ({ cart }) => { // ✅ Accept cart as a prop
         <nav className="container mx-auto px-[10px] md:px-[50px] lg:px-[100px] py-[8px] flex justify-between items-center">
           
           <div className="flex items-center gap-2 md:gap-4">
+            <Link to="/" >
             <img src={EggysImg} alt="Eggy's Logo" className="w-[50px] h-auto" />
+            </Link>
             <div className="flex items-center gap-1 md:gap-2">
               <img src={LocationImg} alt="Location" className="w-[16px] h-auto" />
               <h4 className="text-[#F0F0F0] text-[16px] md:text-[18px] font-[500] hidden md:block">
@@ -55,7 +58,7 @@ const Navbar = ({ cart }) => { // ✅ Accept cart as a prop
 
           <div className="flex items-center gap-2 md:gap-4">
             <h2 className="font-[500] text-[14px] md:text-[16px] text-[#FBFBFB] hidden lg:block">
-              All Products
+              {/* All Products */}
             </h2>
             <ul className="flex items-center gap-2">
               

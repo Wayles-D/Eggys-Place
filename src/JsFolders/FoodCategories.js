@@ -1,5 +1,5 @@
 const FoodCategories = {
-  cheeseburgers: [
+  Burgers: [
     {
       _id: 1,
       image:
@@ -82,7 +82,7 @@ const FoodCategories = {
       duration: "15-20mins",
     },
   ],
-  combos: [
+  Combos: [
     {
       _id: 1,
       image:
@@ -120,7 +120,7 @@ const FoodCategories = {
       duration: "15-20mins",
     },
   ],
-  drinks: [
+  Drinks: [
     {
       _id: 1,
       image:
@@ -158,7 +158,7 @@ const FoodCategories = {
       duration: "15-20mins",
     },
   ],
-  chicken: [
+  Chicken: [
     {
         _id: 1,
         image:
@@ -196,7 +196,7 @@ const FoodCategories = {
         duration: "15-20mins",
       },
   ],
-  chips: [
+  Chips: [
     {
         _id: 1,
         image:
@@ -234,7 +234,7 @@ const FoodCategories = {
         duration: "15-20mins",
       },
   ],
-  salads: [
+  Salads: [
     {
         _id: 1,
         image:
